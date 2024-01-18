@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-siazing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    hanging-punctuation: first last;
+
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100svh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+}
+
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+canvas {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 70ch;
+    text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+    }
+}
